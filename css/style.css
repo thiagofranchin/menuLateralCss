@@ -1,0 +1,38 @@
+body {
+	margin: 0px;
+	padding: 0px; 
+}
+
+#check {
+	display: none;
+}
+
+#check:checked ~ .barra {
+	-webkit-transform: translate(300px);
+	   -moz-transform: translate(300px);
+	    -ms-transform: translate(300px);
+	     -o-transform: translate(300px);
+	        transform: translate(300px);
+}
+
+.icone {
+	font-size: 30px;
+	position: fixed;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.barra {
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	background-color: #ccc;
+	padding-top: 50px;
+	left: -300px;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+
